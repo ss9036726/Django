@@ -1,0 +1,12 @@
+.main{
+    text-align: center;
+}
+.main-content{
+    margin-top: 100px;
+}
+
+.main-content .button{
+    width: 100%;
+    padding: 10px;
+    height: 45px;
+}

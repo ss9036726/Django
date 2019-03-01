@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="articles">
+        <h3><a href="#">{{ detail.title }}</a></h3>
+        <h4>{{ detail.text }}</h4>
+        <h4 class="blockquote-footer"> {{ detail.author }} </h4>
+    </div>
+
+    <h4><a href="{% url 'article_edit' detail.pk %}" class="btn btn-primary btn-lg">Edit This Post</a></h4>
+    <h4><a href="{% url 'article_delete' detail.pk %}" class="btn btn-danger btn-lg">Delete This Post</a></h4>
+
+{% endblock content %}

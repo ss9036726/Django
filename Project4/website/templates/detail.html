@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="articles">
+        <h3><a href="#">{{ detail.title }}</a></h3>
+        <h4>{{ detail.text }}</h4>
+        <p class="blockquote-footer"> {{ detail.author }} </p>
+    </div>
+
+{% endblock content %}
